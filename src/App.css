@@ -1,42 +1,25 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.mainContainer{
+  @apply h-screen w-full bg-slate-950 text-[#fff] text-[20px] 
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.passwordGeneratorContainer{
+  @apply w-full max-w-md mx-auto shadow-md rounded-lg px-4 text-orange-500 bg-gray-700;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.containerBox{
+  @apply flex shadow rounded-lg overflow-hidden mb-4;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.inputFild{
+  @apply outline-none w-full py-1 px-3
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyBtn{
+  @apply outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.actionBtnWrapper{
+  @apply flex text-sm gap-x-2
 }
-
-.card {
-  padding: 2em;
+.actinBtnDiv{
+  @apply flex items-center gap-x-1;
 }
-
-.read-the-docs {
-  color: #888;
+.lengthInput{
+  @apply cursor-pointer
 }
